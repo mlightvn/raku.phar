@@ -1,0 +1,17 @@
+.scroll_to_top{
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	font-size: 30px;
+	opacity: 0.5;
+	z-index: 100;
+}
+
+.scroll_to_top:hover{
+	opacity: 1;
+}
+
+/*.scroll_to_top:only{
+	height:100vh;
+}
+*/
