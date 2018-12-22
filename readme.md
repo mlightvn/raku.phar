@@ -4,7 +4,7 @@
 
 ```bin
 <VirtualHost *:80>
-    ServerName "simple-coding.raku.nam"
+    ServerName "raku.phar"
     DocumentRoot "/var/www/vhosts/raku/src/"
     ErrorLog logs/raku.error.log
     CustomLog logs/raku.access.log combined env=!no_log
