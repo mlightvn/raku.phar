@@ -5,11 +5,11 @@
 ```bin
 <VirtualHost *:80>
     ServerName "simple-coding.raku.nam"
-    DocumentRoot "/var/www/vhosts/raku/simple-coding/view/"
-    ErrorLog logs/simple-coding.error.log
-    CustomLog logs/simple-coding.access.log combined env=!no_log
+    DocumentRoot "/var/www/vhosts/raku/src/"
+    ErrorLog logs/raku.error.log
+    CustomLog logs/raku.access.log combined env=!no_log
 
-    <Directory "/var/www/vhosts/raku/simple-coding/">
+    <Directory "/var/www/vhosts/raku/">
 	DirectoryIndex index.php index.html
 	Options FollowSymLinks
         AllowOverride All
@@ -23,31 +23,31 @@
 ## Require
 
 ```php
-include_once("../Raku/config/bootstrap.php");
+include_once("Raku.phar");
 ```
 
 ## Declare class:
 ```php
-$raku = new \Raku\SimpleCoding\SimpleCoding();
+$raku = new Raku();
 ```
 
 ## Common functions
 
 |Function Name|Parametters|Description|
 |-----|-----|-----|
-|view($source_file_path, $data);|$source_file_path: php file. Similar to blade file path in Laravel.&br;$data: array of parametters (variables) for source file.|Compile source file to compiled file, then display on screen.|
+|view($source_file_path, $data);|$source_file_path: php file. Similar to blade file path in Laravel. $data: array of parametters (variables) for source file.|Compile source file to compiled file, then display on screen.|
 ||||
 
 ## Common attributes
 
 |Attribute Name|Type|Description|
 |-----|-----|-----|
-|isClearCache|boolean: false|True: Clear cached/compiled files every reload. Use for developing. In production, should be false. And clear all cached/compiled files in `storage/compiled/` folder.|
+|isClearCache|boolean: false|True: Clear cached/compiled files every reload. Use for developing. In production, should be false. And clear all cached files in `storage/cache/` folder. `$raku->setClearCache(true)` or `$raku->setClearCache(false)`|
 
 # Sample
 
-Please look in `view/` folder for sample source code.
+Please look in `src/` and `view/` folder for sample source code.
 
 # Deploy to production
 + Deploy latest source code files.
-+ Clear all cache in `storage/compiled/` folder
++ Clear all cache in `storage/cache/` folder
