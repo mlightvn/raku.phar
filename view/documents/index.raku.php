@@ -133,7 +133,7 @@ $include_param = [
 	<h2>Installation</h2>
 	<p>
 		<ol>
-			<li>Download <strong><a href="/download/Raku.phar" download>Raku.phar</a></strong></li>
+			<li>Download <strong>Raku.phar</strong></li>
 			<li>Copy <strong>Raku.phar</strong> into your project folder.</li>
 			<li>Include it in any file you want to use.</li>
 			<li>Create `<strong>storage/cache</strong>`.</li>
