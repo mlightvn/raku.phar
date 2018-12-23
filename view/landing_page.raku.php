@@ -11,7 +11,7 @@
 					<p>Write single PHP page with simple code</p>
 					<p>
 						<a class="btn btn-primary btn-lg" role="button" href="/documents/"><i class="fas fa-book-dead"></i> Documents</a>
-						<a class="btn btn-success btn-lg" role="button" href="https://github.com/namtenten/simple-coding" target="_blank"><i class="fab fa-github"></i> GitHub<a>
+						<a class="btn btn-success btn-lg" role="button" href="https://github.com/namtenten/raku.phar" target="_blank"><i class="fab fa-github"></i> GitHub<a>
 					</p>
 				</div>
 				<div class="col-md-12 col-md-push-6 phone-preview" style="color: #ffffff;">
