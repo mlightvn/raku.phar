@@ -14,7 +14,7 @@
 --}}
 
 			<li class="nav-item">
-				<a class="nav-item btn btn-outline-success" href="https://www.paypal.me/ngocnam" target="_blank"><i class="fas fa-donate"></i> Donate </a>
+				<a class="nav-item btn btn-outline-success" href="https://www.paypal.me/rakujin" target="_blank"><i class="fas fa-donate"></i> Donate </a>
 			</li>
 {{--
 			<li class="nav-item dropdown">
