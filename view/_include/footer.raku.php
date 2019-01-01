@@ -6,7 +6,7 @@
 	<table class="" width="100%">
 		<tr>
 			<td><a href="/"><i class="fas fa-home"></i></a></a></td>
-			<td><a href="https://www.paypal.me/ngocnam" target="_blank"><i class="fas fa-donate"></i></a></a></td>
+			<td><a href="https://www.paypal.me/rakujin" target="_blank"><i class="fas fa-donate"></i></a></a></td>
 		</tr>
 	</table>
 </div>
